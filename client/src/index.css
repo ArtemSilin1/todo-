@@ -1,0 +1,149 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #212832;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+b {
+  user-select: none;
+}
+
+/* Кнопки */
+button {
+  cursor: pointer;
+  border: none;
+}
+.new_task_button {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #FED36A;
+  margin-left: 20px;
+  position: fixed;
+  right: 80px;
+  bottom: 40px;
+
+  transition: background-color .2s ease;
+}
+.new_task_button:hover {
+  background-color: #d9b35a;
+
+  transition: background-color .2s ease;
+}
+
+
+.yellow_button {
+  width: 350px;
+  height: 60px;
+  margin: 60px auto 0;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background-color: #FED36A;
+  color: #000000;
+
+  transition: background-color .2s ease;
+}
+.yellow_button:hover {
+  background-color: #d9b35a;
+
+  transition: background-color .2s ease;
+}
+.yellow_button.disable {
+  background-color: #FED36A20;
+  cursor: not-allowed;
+}
+.yellow_button.disable:before {
+  content: "Задача уже завершена! ";
+}
+
+.exit_icon {
+  background-image: url("./icons/exit.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+}
+.exit_icon:hover {
+  opacity: 0.7;
+}
+
+.end_task_button {
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background-color: #FED36A;
+  color: #000000;
+  padding: 5px;
+  margin-top: 15px;
+
+  transition: background-color .2s ease;
+}
+.end_task_button:hover {
+  background-color: #d9b35a;
+
+  transition: background-color .2s ease;
+}
+
+.admin_button {
+  cursor: pointer;
+  background-color: #FED36A;
+  padding: 10px;
+  border-radius: 10px;
+
+  transition: background-color .2s ease;
+}
+.admin_button:hover {
+  background-color: #d9b35a;
+
+  transition: background-color .2s ease;
+}
+.tasks_buttons_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.end_task_button_color_red {
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background-color: red;
+  color: #000000;
+  padding: 5px;
+  margin-top: 15px;
+  width: 350px;
+  height: 50px;
+  margin: 0 auto;
+
+  transition: background-color .2s ease;
+}
+.end_task_button_color_red:hover {
+  background-color: #d00101;
+
+  transition: background-color .2s ease;
+}
+
+.height_button {
+  height: 40px;
+}
